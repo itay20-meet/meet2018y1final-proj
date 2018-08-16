@@ -67,7 +67,7 @@ LEFT_EDGE = -600
 
 b=turtle.clone()
 b.pensize(18)
-b.pencolor('red')
+b.pencolor('blue')
 b.penup()
 b.goto(650,400)
 b.pendown()
@@ -235,17 +235,20 @@ def check():
         turtle.register_shape("pot.gif")
         pot1.shape("pot.gif")
         pot1.goto(-560,0)
-        pot1.stamp()
+        pot1.st()
+        #pot1.stamp()
         pot2 = turtle.clone()
         
         pot2.shape("pot.gif")
         pot2.goto(-560,-80)
-        pot2.stamp()
+        pot2.st()
+        #pot2.stamp()
         pot3 = turtle.clone()
        
         pot3.shape("pot.gif")
         pot3.goto(-560,-160)
-        pot3.stamp()
+        pot3.st()
+        #pot3.stamp()
 
         #print("Follow bools: ",bucket_follow,seed_follow,seed_follow_2,seed_follow_3)
 
@@ -291,6 +294,21 @@ def check():
             seeds.ht()
             seeds2.ht()
             seeds3.ht()
+            seeds.clear()
+            seeds2.clear()
+            seeds3.clear()
+            bucket.clear()
+            bucket2.clear()
+            bucket3.clear()
+            pot1.shape("sunflower.gif")
+            pot2.shape("sunflower.gif")
+            pot3.shape("sunflower.gif")
+            pen.clear()
+            pen.penup()
+            pen.color("red")
+            pen.goto(-650,350)
+            pen.write("and then Dany realised he was the monster the whole time!!", font=("Arial", 40, "normal"))
+            
             
             
         
